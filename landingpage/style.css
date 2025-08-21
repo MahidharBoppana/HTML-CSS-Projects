@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+    scroll-behavior: smooth;
+}
+
+header{
+    height: 100%;
+    background-image: url(./images/header.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+}
+.navbar{
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+.nav-brand{
+    list-style: none;
+    margin: 20px;
+    width: 100%;
+}
+.nav-brand a{
+    text-decoration: none;
+    color: #1d1e21;
+    font-weight: bold;
+    font-size: 30px;
+}
+.nav-brand a:hover{
+    text-decoration: none;
+    color: #1D1E21;
+}
+.nav-brand a:focus{
+    text-decoration: none;
+    color: #1D1E21;
+}
+
+.nav-items{
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    margin: 20px;
+    width: 100%;
+}
+.nav-items a{
+    margin: 20px;
+    text-decoration: none;
+    color: #1d1e21;
+}
+.nav-items a:hover{
+    text-decoration: none;
+    color: #1D1E21;
+}
+.nav-items a:focus{
+    text-decoration: none;
+    color: #1D1E21;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin-left: 150px;
+    color: #1d1e21;
+}
+.header-content h1{
+    font-size: 51px;
+    margin-bottom: 10px;
+}
+.header-content p{
+    font-size: 24px;
+    word-spacing: 5px;
+}
+.header-content .btn{
+    width: 200px;
+    padding: 15px 20px;
+    border: 2px solid black;
+    background: none;
+    color: #1d1e21;
+    margin-top: 50px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.sec-1{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.content{
+    height: 500px;
+    width: 440px;
+}
+.content h1{
+    position: absolute;
+    font-size: 51px;
+    color: #1d1e21;
+    right: 450px;
+    top: 200px;
+}
+.content div{
+    color: #1d1e21;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    margin-left: 50px;
+}
+.content h3{
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+.content p{
+    font-size: 16px;
+    font-family: "Lato", serif;
+    color: #38383B;
+    line-height: 25px;
+}
+.sec-2 h2{
+    text-align: center;
+    color: #1d1e21;
+    font-size: 32px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.skill{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.skill span{
+    font-size: 176px;
+    font-family: "Oswald", serif;
+    font-weight: bold; 
+    position: relative;
+    z-index: 1;
+}
+.skill .text{
+    position: absolute;
+    z-index: 2;
+    font-weight: bold;
+    font-size: 19px;
+    width: 180px;
+    top: 70px;
+    text-align: end;
+}
+.sec-2 .btn{
+    display: flex;
+    justify-content: center;
+}
+.sec-2 button{
+    padding: 15px 20px;
+    border: 2px solid black;
+    background: none;
+    color: #1d1e21;
+    margin-top: 50px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.container{
+    background-color: #A6D1D4;
+    width: 980px;
+    height: 521px;
+    margin: 100px 0;
+    
+}
+.carousel-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 521px;
+}
+.item h2{
+    text-align: center;
+    font-size: 32px;
+    color: #1d1e21;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.item p{
+    font-size: 51px;
+    width: 800px;
+    margin-bottom: 20px;
+}
+.item .title{
+    font-size: 18px;
+    text-align: center;
+}
+
+.carousel-control.left, 
+.carousel-control.right {
+    background: none !important;
+}
+
+
+.carousel-control.left:hover, 
+.carousel-control.right:hover {
+    background: none !important;
+    opacity: 1; 
+}
+
+
+.carousel-control.left:focus, 
+.carousel-control.right:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.carousel-inner .item {
+    background-color: inherit !important; 
+}
+.carousel-control {
+    display: none !important; 
+}
+.carousel-inner .item {
+    color: black !important; 
+}
+
+.carousel-indicators .active {
+    background-color: black !important;
+}
+.sec-4 h2{
+    text-align: center;
+    font-size: 32px;
+    color: #1d1e21;
+    font-weight: bold;
+}
+.companies{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.sec-5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.left{
+    width: 600px;
+    height: 700px;
+    background-color: #1D1E21;
+    padding: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.left-content{
+    width: 300px;
+}
+.left h2{
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+}
+.left label{
+    display: block;
+}
+.left form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.left input[type="email"]{
+    border:1px solid #EF9C83;
+    padding: 10px 20px;
+    background: transparent;
+    margin-bottom: 30px;
+}
+.left input[type="checkbox"]{
+    align-self: flex-start;
+    display: flex;
+}
+.left .check-label{
+    font-weight: normal;
+    font-family: "Lato", serif;
+}
+.left .btn{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+.left button{
+    width: 150px;
+    padding: 10px 20px;
+    color: black;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+    background-color: #EF9C83;
+}
+.left-content p{
+    text-align: center;
+    font-family: "Lato", serif;
+    list-style: 10px;
+}
+.social{
+    display: flex;
+    justify-content: center;
+}
+.social a{
+    margin: 20px;
+    font-size: 24px;
+    color: white;
+}
+.right{
+    width: 600px;
+    height: 700px;
+    background-color: #EF9C83;
+    background-image: url('./images/footer.avif'); 
+    background-size: 70%; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    display: flex;
+    flex-direction: column;
+}
+.right-content h2{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 100px;
+    color: #1D1E21;
+}
+.right-content .right-btn{
+    display: flex;
+    justify-content: center;
+}
+.right-content button{
+    padding: 15px 20px;
+    border: 2px solid black;
+    background: none;
+    color: #1d1e21;
+    margin-top: 50px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    font-family: "Lato", serif;
+}

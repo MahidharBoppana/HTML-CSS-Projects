@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+.navbar {
+  height: 60px;
+  background-color: #0f1111;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+  position: relative;
+  position: sticky;
+}
+.nav-logo {
+  height: 50px;
+  width: 100px;
+}
+.logo {
+  background-image: url(./assests/amazon_logo.png);
+  background-size: cover;
+  height: 50px;
+  width: 100%;
+  cursor: pointer;
+}
+.nav-location {
+  margin: 5px;
+  padding: 5px 5px;
+}
+
+.location .p {
+  color: #cccccc;
+  font-size: 12px;
+}
+.location p {
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.location .location-icon {
+  cursor: pointer;
+  background-size: contain;
+}
+
+.border {
+  border: 1.5 solid transparent;
+}
+
+.border:hover {
+  border: 1.5px solid white;
+  border-radius: 2px;
+}
+
+.nav-search {
+  display: flex;
+  padding: 10px 0px;
+  align-items: center;
+}
+
+.search-select {
+  color: #0f1111;
+  font-size: 14px;
+  background-color: #e6e6e6;
+  padding: 10px 8px;
+  border: none;
+  height: 38px;
+  border-radius: 3px 0px 0px 3px;
+  outline: none;
+}
+
+.search-input {
+  padding: 10px;
+  height: 38px;
+  border: none;
+  width: 400px;
+  outline: none;
+}
+.search-icon {
+  background-color: #febd69;
+  height: 38px;
+  width: 50px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 0px 3px 3px 0px;
+}
+
+.nav-language {
+  display: flex;
+  align-items: center;
+}
+.nav-language img {
+  width: 25px;
+  margin: 1px;
+}
+
+.language-select {
+  border: none;
+  border-radius: 2px;
+  outline: none;
+}
+
+.language-select option:checked {
+  font-weight: bold;
+}
+
+.nav-language:hover {
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.nav-signin span {
+  color: #cccccc;
+}
+
+.nav-signin p {
+  font-weight: bold;
+}
+
+.nav-signin:hover {
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.returns-orders span {
+  color: #cccccc;
+}
+.returns-orders p {
+  font-weight: bold;
+}
+
+.returns-orders:hover {
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.nav-cart span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav-cart:hover {
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.nav-links {
+  background-color: #232f3e;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.nav-links ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links li:hover {
+  border: 1.5px solid white;
+  border-radius: 2px;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.carousel img {
+  background-size: cover;
+  width: 100%;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: black;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+  background-color: transparent;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+.shop {
+  background-color: #ced4db;
+}
+.shoping-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.shoping-items .box1 {
+  height: 385px;
+  width: 400px;
+  background-color: white;
+  padding: 10px;
+}
+.box1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 10px auto;
+  gap: 20px;
+  border-radius: 5px;
+}
+.items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.items .items-img {
+  height: 130px;
+  width: 160px;
+  background-size: cover;
+}
+
+.box2 {
+  height: 385px;
+  width: 400px;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 10px auto;
+  gap: 20px;
+  border-radius: 5px;
+}
+
+.items .box2-img {
+  background-size: cover;
+  width: 350px;
+  height: 250px;
+}
+
+.image-slider {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.slider-track img {
+  background-size: cover;
+  width: 100%;
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.slider-prev {
+  left: 10px;
+}
+
+.slider-next {
+  right: 10px;
+}
+
+main {
+  margin-bottom: 50px;
+}
+
+.footer-border{
+  border: 1px solid #77818d;
+  margin: 0px 20px;
+}
+
+.footer-sigin-btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  gap: 10px;
+}
+.footer-sigin-btn button{
+  background-color: #FFD815;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 200px;
+  padding: 10px 5px;
+}
+
+.back-to-top{
+  background-color: #232f3e;
+  margin-top: 10px;
+  padding: 15px 10px;
+  text-align: center;
+  
+}
+.back-to-top a{
+  text-decoration: none;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+.footer-links{
+  background-color: #0f1111;
+  color: white;
+  padding: 50px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.footer-box h3{
+  margin-bottom: 20px;
+}
+
+.footer-box li{
+  list-style: none;
+  color: #77818d;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  cursor: pointer;
+}
+.footer-box li:hover{
+  text-decoration: underline;
+}
+
+.footer-border-bottom{
+  border: 1px solid #232f3e;
+}
+
+.footer-logo{
+  background-color: #0f1111;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-logo img{
+  height: 100px;
+  width: 200px;
+  background-size: cover;
+}
